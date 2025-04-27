@@ -20,6 +20,7 @@ import { UnauthorizedComponent } from './unauthorized/unauthorized.component';
 import { SpinnerComponent } from './shared/spinner/spinner.component';
 import { LoadingInterceptor } from './interceptors/loading.interceptor';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,7 @@ import { LoadingInterceptor } from './interceptors/loading.interceptor';
     IntroComponent,
     ForgotPasswordComponent,
     UnauthorizedComponent,
-    SpinnerComponent
+    SpinnerComponent,
   ],
   imports: [
     BrowserModule,
