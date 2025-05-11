@@ -94,11 +94,69 @@ A full-stack insurance management platform meticulously crafted following indust
    ```sh
    cd backend
    ```
+   (1) Open the tool
+   This project needs to be opened with the IntelliJ IDEA development software.
+   (2) Check the run configuratio
+   Check in the 'Menu' if the SDK version in 'Project Structure' is 17 or higher, and whether the 'Language Level' is set to the SDK default value.
+   Check if the run/debug configuration is set for Spring Boot.
+   
 2. Build and run using Gradle/Maven:
    ```sh
    ./gradlew bootRun  # For Gradle
    mvn spring-boot:run  # For Maven
    ```
+   You may encounter the issue of 'dependencies cannot be resolved' during runtime.
+   Reason:
+   This may be a network issue causing Maven to be unable to download dependencies from the remote repository, or the remote repository address may be unavailable.
+   The local cache of Maven might contain incorrect metadata, leading to an inability to resolve dependencies correctly. 
+   There may be configuration errors in the pom.xml file, such as incorrect repository addresses or dependency versions.
+   ```
+  How to solve:
+  
+   (1) Check the dependency version
+   Open the Maven Central Repository.
+   Search for "org.apache.tomcat.embed:tomcat-embed-core"
+   Confirm whether version 10.1.39 exists. 
+   If it does not exist, switch to an available version (such as 10.1.38).
+   ```
+   (2) Update pom.xmlIf the version does not exist, modify the dependency version in the pom.xml file. For example:
+    <dependency>
+      <groupId>org.apache.tomcat.embed</groupId>
+      <artifactId>tomcat-embed-core</artifactId>
+      <version>10.1.38</version> <!-- Change to the existing version -->
+      <scope>provided</scope>
+    </dependency>
+
+    (3) Clean the Maven cache
+    Maven's local cache may contain erroneous metadata. 
+    You can clean the local cache using the following command:
+    mvn dependency:purge-local-repository Or manually delete the local Maven cache directory (the default path is ~/.m2/repository)
+
+    (4) Force update dependencies
+     Run the following command to force Maven to update dependencies: mvn clean install -U
+     
+    (5) Check your network connection.
+    Ensure that your network can access the Maven Central Repository (`https://repo1.maven.org/maven2/`).
+    If there are network issues, you may try configuring a proxy or switching to another network.
+
+    (6) Check the warehouse configuration.
+    Ensure that the <repositories> configuration in pom.xml is correct. For example:
+    <repositories>
+      <repository>
+        <id>central</id>
+        <url>https://repo1.maven.org/maven2/</url>
+      </repository>
+    </repositories>
+
+    (7) Check the IDE cache.
+    If you are using an IDE (such as IntelliJ IDEA or Eclipse), you may need to clean the IDE's cache.
+    File   ->   Invalidate Caches / Restart   ->   Invalidate and Restart  
+
+    Following the steps outlined above should resolve the issue of dependency resolution failure.
+
+    <!-- 韦家装 -->
+
+
 3. API will be accessible at `http://localhost:8080`
 
 ### Frontend
