@@ -154,7 +154,7 @@ A full-stack insurance management platform meticulously crafted following indust
 
     Following the steps outlined above should resolve the issue of dependency resolution failure.
 
-    <!-- 韦家装 -->
+    <!-- 韦家装 --->
 
 
 3. API will be accessible at `http://localhost:8080`
