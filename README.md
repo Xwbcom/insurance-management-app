@@ -1,6 +1,46 @@
 # Insurance Management System
+A full-stack insurance management platform meticulously crafted following industry best practices, engineered for unparalleled scalability and effortless maintainability. This capstone project showcases a cutting-edge microservices-oriented architecture, fortified with robust security protocols and comprehensive reporting capabilities to meet the diverse needs of modern insurance operations.
 
-This is a capstone project that serves as an Insurance Management System, developed using a Java Spring Boot backend and an Angular frontend. This project follows an industry-level structure and is designed for scalability and maintainability.
+## ✨ Key Features
+### Core Services
+- **Identity Management**
+  - JWT-based authentication & authorization
+  - Role-based access control (RBAC)
+  - Password encryption & recovery
+  - Session management
+
+- **Policy Administration**
+  - Policy lifecycle management
+  - Coverage customization
+  - Automated renewals
+  - Document generation
+
+- **Claims Processing**
+  - Intake forms with validation
+  - Damage assessment tools
+  - Fraud detection indicators
+  - Settlement workflows
+
+- **Financial Modules**
+  - Premium calculation engine
+  - Commission tracking (agent/broker)
+  - Payment gateway integration (Stripe/PayPal)
+  - Accounting reconciliation
+
+### Advanced Capabilities
+- **Business Intelligence**
+  - Real-time dashboards
+  - Custom report builder
+  - Predictive analytics
+  - Regulatory compliance reporting
+
+- **Integration Services**
+  - Cloud storage (AWS S3/Azure Blob)
+  - Email/SMS notifications
+  - Third-party API gateway
+  - Webhook support
+<!-- by 林科宇 -->
+
 
 ## Repository Structure
 ```
