@@ -380,3 +380,88 @@ Execute the downloaded file and follow the installation wizard:
 - 4.Push to the branch (git push )
 - 5.Open a Pull Request
 <!-- by 谢文斌 -->
+
+#Homepage Introduction Component
+This directory contains the component, which is part of the insurance management system frontend. The component is designed to display an introduction or overview section on the application's homepage.
+
+##Features
+· Dynamic Content: The component can render dynamic content related to the application introduction.
+· Responsive Design: Ensures the introduction section displays correctly across various devices.
+· Customizable: Allows easy modification of displayed text, styles, or layouts.
+
+##File Structure
+src/app/components/homepage-intro/
+├── home-page-intro.component.ts  # TypeScript logic for the component
+├── home-page-intro.component.html  # HTML template
+├── home-page-intro.component.css  # Component styles
+├── home-page-intro.module.ts  # Angular module definition
+
+#Usage Instructions
+##Importing the Component
+To use this component in your Angular application, ensure the module is properly imported in your feature module or AppModule:
+```
+Import {HomePageIntroComponent}. /Component/homepage introduction/homepage introduction. Components';
+```
+
+##Adding Component to Template
+You can include this component in any Angular template using its selector:
+```
+<Application homepage introduction></app homepage introduction>
+```
+
+##Custom Content
+Modify files to update introductory text or add new visual elements. For example:
+
+```
+<div class="Introduction section">
+<h1>Welcome to the insurance management system</h1>
+<p>Efficiently manage your insurance policies, claims, and customer information. </p>
+</div>
+```
+
+##Styling
+You can update the stylesheet to comply with the application's design system. Example:
+
+```
+Introduction section{
+Text alignment: centered;
+Fill: 20px;
+Background color: # f9f9f9;
+}
+```
+
+#Technology Stack
+Angular: A framework for building dynamic, single-page applications (SPAs) with reactive architecture.
+TypeScript: Provides static typing for enhanced code maintainability and developer productivity.
+HTML: Used for structuring web page content with semantic markup.
+CSS: Handles styling, theming, and responsive layout implementation.
+
+#File Structure
+The frontend source code is located in the frontend/insurance-mgmt directory with the following core architecture:
+```
+frontend/
+│
+├── src/
+│   ├── app/                  # Core business logic modules and components
+│   ├── assets/               # Static assets (images, fonts, etc.)
+│   ├── environments/         # Environment configuration files
+│   ├── index.html            # Application entry point (HTML shell)
+│   ├── main.ts               # Bootstrapping script (Angular platform)
+│   ├── styles.css            # Global stylesheet
+│   └── polyfills.ts          # Browser compatibility polyfills
+│
+├── angular.json              # Angular workspace configuration
+├── package.json              # NPM dependencies and build scripts
+└── tsconfig.json             # TypeScript compiler configuration
+```
+
+#Functional Modules
+##User Management Module
+Implements authentication (login/registration) and role-based access control (RBAC).
+##Policy Management Module
+CRUD operations for insurance policy records with state management.
+##Claims Processing Module
+End-to-end claim submission, approval workflows, and status tracking.
+##Analytics Dashboard
+Data visualization of KPIs (policies issued, claim trends) via charts and metrics.
+<!-- by lijintai -->
