@@ -209,3 +209,85 @@ API call mocking
 Success and error case handling
 Navigation testing
 <!-- by 林子煊 -->
+
+# Authentication Module
+## Table of Contents
+1.Component Architecture
+2.Router Configuration
+3.API Integration with Axios
+4.Server-Side Rendering (SSR) Setup
+5.Shared Features & Optimization
+6.Installation Guide
+7.Development Best Practices
+
+## API Integration with Axios
+### Installation Requirements
+- 1.Axios is a promise-based HTTP client for browsers and node.js, which simplifies making API calls. To install it in your project, you can use either npm or yarn:
+```
+npm install axios
+# or
+yarn add axios
+```
+- 2.If you are working on an Angular application and plan to integrate Axios within an application that uses routing functionality, you need to install the @angular/router package. This package provides routing capabilities for Angular applications, which might be relevant when handling API responses and navigating between different views.
+```
+npm install @angular/router  
+```
+### Auth Service Implementation
+```
+axios的导入
+import axios from 'axios';
+
+export default {
+  xxxxxxx(userData) {
+    return axios.post(`${API_URL}/xxxxxx`, userData);
+  },}
+
+   // Add interceptors for error handling
+  setupInterceptors() {
+    axios.interceptors.response.use(
+      response => response,
+      error => {
+        // Handle global API errors
+        return Promise.reject(error);
+      }
+    );
+  }
+  ```
+```
+  import { RouterModule, Routes } from '@angular/router';
+
+@NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+```
+### Maintenance
+Recommended practices:
+- 1.Keep dependencies updated
+- 2.Monitor for security advisories
+- 3.Test across Angular version updates
+- 4.Document any custom configurations
+
+#🤝 Contribution
+## installs
+### Download Installer
+-Visit Git(https://git-scm.com/downloads) for Windows and download the latest installer.
+### Run Setup
+Execute the downloaded file and follow the installation wizard:
+- Accept the license agreement.
+- Choose the default components.
+- Select the default editor (e.g., Visual Studio Code).
+- Keep "Use Git from the Windows Command Prompt".
+- Use the OpenSSL library for HTTPS connections.
+- Checkout Windows-style, commit Unix-style line endings.
+- Use Windows' default console window.
+- Install additional features (optional).
+
+## We welcome contributions! Please follow our guidelines:
+
+- 1.Fork the repository
+- 2.Create your feature branch (git checkout -b )
+- 3.Commit your changes (git commit -m 'xxxx')
+- 4.Push to the branch (git push )
+- 5.Open a Pull Request
+<!-- by 谢文斌 -->
