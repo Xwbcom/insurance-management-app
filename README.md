@@ -135,6 +135,11 @@ A full-stack insurance management platform meticulously crafted following indust
     (4) Force update dependencies
      Run the following command to force Maven to update dependencies: mvn clean install -U
      
+     Note: The -U option forces Maven to check and update the snapshot versions (SNAPSHOT) of dependencies. If the project uses snapshot version dependencies, these dependencies may introduce incompatible changes after the update. 
+     - Solutions:
+     • Carefully check the version update logs of the dependencies before updating to understand potential incompatible changes.
+     • Conduct thorough testing in the development environment to ensure that the updated dependencies do not affect the functionality of the project.
+
     (5) Check your network connection.
     Ensure that your network can access the Maven Central Repository (`https://repo1.maven.org/maven2/`).
     If there are network issues, you may try configuring a proxy or switching to another network.
