@@ -470,3 +470,40 @@ End-to-end claim submission, approval workflows, and status tracking.
 ## Analytics Dashboard
 Data visualization of KPIs (policies issued, claim trends) via charts and metrics.
 <!-- by lijintai -->
+
+# customer
+```
+src/app/customer
+├── customer-components     # Contains reusable Angular components related to customer functionalities.
+├── customer-routing.module.ts    # Defines the routing configuration for customer-related pages and components.
+├── customer.module.ts    # The main module file for grouping all customer-related components, services, and configurations.
+├── model.ts        # Contains TypeScript models and interfaces for defining customer-related data structures.
+├──services             #Contains service files for handling business logic, API calls, and data management related to customers.
+```
+## Purpose and Functionality
+- 1.Introduction
+The src/app/customer folder serves as the core organizational unit for managing functions related to the customer module in the front-end application. It adopts an advanced modular design concept to systematically integrate business logic, visual components, data interaction services, etc. related to customers. This greatly enhances the maintainability of the code, facilitates the expansion of new functions, and effectively reduces the development cycle and labor costs.
+
+- 2. Directory Structure
+It is specifically used to store Angular components for implementing customer functions, covering various application scenarios such as customer information display, form operations, and data dashboards. Through the component reuse mechanism, repetitive development is reduced, and development efficiency is improved.
+
+- 3. Component Directory (customer-components)
+The components are designed and developed closely around diverse application scenarios related to customers. For example:
+
+Customer Information Display Component: Presents important data such as customers' basic information and transaction records to users in a clear and intuitive way through an intuitive interface layout.
+Form Operation Component: Utilizes advanced interaction design to achieve efficient data entry and modification, and is equipped with a complete verification mechanism to ensure the accuracy of the data.
+Data Dashboard Component: Displays the dynamic changes of customer-related data in real time with the help of visual charts, providing strong support for decision-making.
+
+- 4.Routing Module (customer-routing.module.ts)
+This file constructs a navigation system through meticulous configuration. When users enter a specific URL in the browser to access customer-related pages, it can quickly identify and match the corresponding page components, achieving smooth page jumps and efficient data loading.
+
+- 5.Module File (customer.module.ts)
+It organically integrates all function modules related to customers, follows the principles of high cohesion and low coupling, ensures that the logic related to customer functions is closely combined, and makes the customer module independent of other modules, with interaction only through clear interfaces.
+
+
+- 6. Model File (model.ts)
+It precisely defines the data structure of customer information in the form of interfaces or classes and clarifies the types and formats of customer data.
+
+## Summary of Function
+The folder is a modular section of the frontend application that encapsulates all customer-related features and functionalities. It ensures a clear separation of concerns, making the application easier to maintain, scale, and develop. By organizing components, routing, models, and services, it provides a robust framework for implementing customer-centric features efficiently.
+<!-- by 韦朝刚 -->
