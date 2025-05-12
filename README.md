@@ -61,20 +61,55 @@ This is a capstone project that serves as an Insurance Management System, develo
    ```
 3. API will be accessible at `http://localhost:8080`
 
+
+ <!-- hyt -->
 ### Frontend
+### Frontend Setup and Running Guide
+- This document provides step-by-step instructions to set up the environment, verify Node.js installation, and run the frontend application of the Insurance Management System.
+
+#### Prerequisites
+Before running the frontend project, ensure you have the following installed:
+- **Node.js**: A runtime environment for JavaScript.
+- **Angular CLI**: A command-line interface tool for Angular.
+---
+###### 1. Download and Install Node.js
+1. Visit the [Node.js Official Website](https://nodejs.org/).
+2. Download the **LTS (Long-Term Support)** version suitable for your operating system.
+3. Follow the installation instructions provided on the website for your platform.
+---
+###### 2. Verify Node.js Installation
+After installation, verify that Node.js and npm (Node Package Manager) are installed correctly:
+
+1. Open your terminal (Command Prompt, PowerShell, or any other terminal tool).
+2. Run the following command to check the Node.js version:
+   ```bash
+   node -v
+   npm -V
+
+###### 3.Set Up the Frontend Project
+Once Node.js is installed, follow these steps to set up and run the frontend application:
+
 1. Navigate to the frontend folder:
    ```sh
-   cd frontend
+   cd frontend/insurance-mgmt
    ```
 2. Install dependencies:
-   ```sh
+   ```
    npm install
    ```
-3. Run the Angular application:
+###### 4. Run the Frontend Application
+To start the development server:   
+1. Run the Angular application:
    ```sh
    ng serve
    ```
-4. Application will be accessible at `http://localhost:4200`
+2. Open your browser and go to: 
+Application will be accessible at `http://localhost:4200`
+The application will automatically reload whenever you make changes to the source files.
+ <!-- hyt -->
+
+
+
 
 ## Collaboration Guidelines
 - Use feature branches for new functionality
@@ -88,5 +123,6 @@ This is a capstone project that serves as an Insurance Management System, develo
 
 ---
 Happy Coding! 🚀
+
 
 
