@@ -127,3 +127,14 @@ Execute the downloaded file and follow the installation wizard:
 - Use Windows' default console window.
 - Install additional features (optional).
 <!-- by 谢文斌 -->
+
+
+
+
+# 修改前：
+- This document provides step-by-step instructions to set up the environment, verify Node.js installation, and run the frontend application of the Insurance Management System.
+修改后的介绍更完美：
+- This document offers comprehensive, step-by-step guidance on environment setup, verification of Node.js installation, and the execution of the Insurance Management System's frontend application. It meticulously details each process, ensuring that users can smoothly navigate through the configuration and deployment phases, thereby enabling a seamless experience in launching and operating the system's frontend component.
+
+本文档精心为您呈现了全面且环环相扣的操作指引，内容涉及环境搭建、Node.js 安装的核验，以及保险管理系统前端应用程序的运行。文档对每一个操作流程都进行了极为细致的阐述，确保您能够轻松、顺利地完成配置与部署工作，进而在启动和操作系统前端组件时，畅享毫无阻碍的流畅体验。
+<!-- by 黄玉彤 -->
