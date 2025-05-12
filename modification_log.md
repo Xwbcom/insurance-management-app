@@ -138,3 +138,55 @@ Execute the downloaded file and follow the installation wizard:
 
 本文档精心为您呈现了全面且环环相扣的操作指引，内容涉及环境搭建、Node.js 安装的核验，以及保险管理系统前端应用程序的运行。文档对每一个操作流程都进行了极为细致的阐述，确保您能够轻松、顺利地完成配置与部署工作，进而在启动和操作系统前端组件时，畅享毫无阻碍的流畅体验。
 <!-- by 黄玉彤 -->
+
+# 修改前
+# Usage Instructions
+## Importing the Component
+To use this component in your Angular application, ensure the module is properly imported in your feature module or AppModule:
+```
+Import {HomePageIntroComponent}. /Component/homepage introduction/homepage introduction. Components';
+```
+## Styling
+You can update the stylesheet to comply with the application's design system. Example:
+```
+Introduction section{
+Text alignment: centered;
+Fill: 20px;
+Background color: # f9f9f9;
+}
+```
+## 样式调整  
+可根据应用设计系统更新样式表，示例：  
+```css
+.intro-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+```
+# 修改后
+# Usage Instructions
+## Importing the Component
+To use this component in your Angular application, ensure the module is properly imported in your feature module or AppModule:
+```
+import { HomePageIntroComponent } from '../components/homepage-intro/home-page-intro.component';
+```
+## Styling
+You can update the stylesheet to comply with the application's design system. Example:
+```
+.introduction-section {
+text-align: center;
+padding: 20px;
+background-color: #f9f9f9;
+}
+```
+## 样式调整  
+可根据应用设计系统更新样式表，示例：  
+```css
+.intro-section {
+  文本对齐: 居中;
+  内边距: 20px;
+  背景色: #f9f9f9;
+}
+```
+<!-- by 李锦太 -->
