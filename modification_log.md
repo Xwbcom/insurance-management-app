@@ -91,3 +91,39 @@ An all-encompassing, full-stack insurance management platform meticulously craft
 可测试性：隔离验证逻辑
 性能优化：验证触发机制优化
 <!-- by 林子煊 -->
+
+# axios的修改前：
+## API Integration with Axios
+### Installation Requirements
+```
+npm install axios
+# or
+yarn add axios
+```
+```
+npm install @angular/router  
+```
+修改后：
+## API Integration with Axios
+### Installation Requirements
+- 1.Axios is a promise-based HTTP client for browsers and node.js, which simplifies making API calls. To install it in your project, you can use either npm or yarn:
+```
+npm install axios
+# or
+yarn add axios
+```
+# 添加git的介绍安装部署：
+## installs
+### Download Installer
+-Visit Git(https://git-scm.com/downloads) for Windows and download the latest installer.
+### Run Setup
+Execute the downloaded file and follow the installation wizard:
+- Accept the license agreement.
+- Choose the default components.
+- Select the default editor (e.g., Visual Studio Code).
+- Keep "Use Git from the Windows Command Prompt".
+- Use the OpenSSL library for HTTPS connections.
+- Checkout Windows-style, commit Unix-style line endings.
+- Use Windows' default console window.
+- Install additional features (optional).
+<!-- by 谢文斌 -->
