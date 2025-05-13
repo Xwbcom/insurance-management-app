@@ -224,6 +224,53 @@ Before running the frontend project, ensure you have the following installed:
 Happy Coding! 🚀
 
 
+# Login Component
+## Directory Structure
+login/
+├── forgot-password/        # Sub-directory for password recovery functionality
+├── login.component.css     # Styles for the login component
+├── login.component.html    # HTML template for the login form
+├── login.component.spec.ts # Unit tests for the login component
+└── login.component.ts      # TypeScript file for managing login logic
+
+## Purpose
+The login component functions as the pivotal gateway for user authentication, playing a crucial role in the overall user experience and system security. It serves as the initial interface where users interact with the application to gain access to its features and protected resources. Specifically, it empowers users to:
+
+- 1.Log in with their credentials
+- 2.Recover forgotten passwords
+- 3.Navigate to the registration page
+
+## Features
+### Input Fields:
+- 1.username: Validates email format
+
+- 2.password: Checks for minimum length requirements
+### Buttons:
+- 1.Login: Submits credentials to the server
+- 2.Forgot Password: Redirects to password recovery
+- 3.Register: Redirects to registration page
+### Validation:
+- 1.Displays errors for missing username/password
+
+- 2.Shows server-side error messages for invalid credentials
+### Routing:
+- 1.Primary route: /login
+- 2.Redirects:
+- /register for new user registration
+- /forgot-password for password recovery
+
+## TypeScript Logic
+Form Validation: Ensures required fields are properly filled
+
+Authentication:
+- API Communication: Initiates a POST request to the backend API, securely transmitting user credentials. This interaction serves as the core mechanism for user authentication within the system.
+- Response Handling:
+Success Scenario: Upon a successful authentication response from the server, seamlessly redirects users to the dashboard, providing immediate access to the application's main functionality.
+- Failure Scenario: In case of authentication failure, presents clear and user - friendly error messages, guiding users on potential corrective actions.
+Navigation Management: Employs Angular's robust Router service to efficiently manage application routes. This ensures smooth navigation transitions, enabling users to move between different views and pages in an intuitive and organized manner.
+<!-- by 龙镇法 -->
+
+
 # Register Component
 ## Directory Structure
 register/
