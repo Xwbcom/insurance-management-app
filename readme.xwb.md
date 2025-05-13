@@ -10,16 +10,19 @@
 使用 Axios 进行 API 集成
 ## 安装要求
 Axios 是一款基于 Promise 的 HTTP 客户端，适用于浏览器和 Node.js 环境，能够简化 API 调用流程。你可以使用npm或yarn将其安装到项目中：
-
+```
 plaintext
 npm install axios
+```
 # 或者
+```
 yarn add axios
-
+```
 如果你正在开发 Angular 应用，并且计划在具有路由功能的应用中集成 Axios，那么需要安装@angular/router包。该包为 Angular 应用提供路由能力，在处理 API 响应以及在不同视图间导航时会发挥重要作用。
-
+```
 plaintext
-npm install @angular/router  
+npm install @angular/router
+```  
 ## 认证服务实现
 javascript
 // 导入Axios
@@ -67,12 +70,12 @@ import { RouterModule, Routes } from '@angular/router';
 执行下载好的安装文件，并按照安装向导进行操作：
 
 ## 接受许可协议
-选择默认组件
-选择默认编辑器（如 Visual Studio Code）
-保持 “在 Windows 命令提示符中使用 Git” 选项
-使用 OpenSSL 库处理 HTTPS 连接
-检出 Windows 风格换行符，提交时使用 Unix 风格换行符
-使用 Windows 默认控制台窗口
+## 选择默认组件
+- 1.选择默认编辑器（如 Visual Studio Code）
+- 2.保持 “在 Windows 命令提示符中使用 Git” 选项
+- 3.使用 OpenSSL 库处理 HTTPS 连接
+- 4.检出 Windows 风格换行符，提交时使用 Unix 风格换行符
+- 5.使用 Windows 默认控制台窗口
 ##（可选）安装额外功能
 我们欢迎你的贡献！请遵循以下步骤：
 - 复刻（Fork）本仓库
