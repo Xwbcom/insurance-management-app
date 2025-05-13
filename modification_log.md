@@ -388,3 +388,20 @@ interface Customer {​
   src/app/customer 文件夹是前端应用中一个精心设计的模块化单元，它全面涵盖了与客户相关的各类功能。通过将组件、路由、模型和服务进行合理组织和分工，实现了清晰的关注点分离。这种架构设计带来了诸多优势：在维护方面，当需要修改某个客户功能时，开发者可以快速定位到对应的组件或服务进行修改，而不会影响到其他模块；在拓展方面，随着业务需求的增加，可以方便地在该模块内新增组件、服务或修改路由配置，实现新功能的添加；在开发过程中，团队成员可以根据各自的专长负责不同的模块部分，并行开发，提高开发效率。总之，它为高效实现以客户为中心的功能提供了坚实且灵活的框架，是保障前端应用客户模块稳定运行和持续发展的关键所在。​
   
 <!--韦朝刚-->
+
+
+## Purpose修改前
+The login component serves as the entry point for user authentication, allowing users to:
+修改后：
+The login component functions as the pivotal gateway for user authentication, playing a crucial role in the overall user experience and system security. It serves as the initial interface where users interact with the application to gain access to its features and protected resources. Specifically, it empowers users to:
+
+### Authentication:
+- API Communication: Initiates a POST request to the backend API, securely transmitting user credentials. This interaction serves as the core mechanism for user authentication within the system.
+- Response Handling:
+Success Scenario: Upon a successful authentication response from the server, seamlessly redirects users to the dashboard, providing immediate access to the application's main functionality.
+- Failure Scenario: In case of authentication failure, presents clear and user - friendly error messages, guiding users on potential corrective actions.
+Navigation Management: Employs Angular's robust Router service to efficiently manage application routes. This ensures smooth navigation transitions, enabling users to move between different views and pages in an intuitive and organized manner.
+/register：此路由专门用于引导新用户完成注册流程。当用户点击注册按钮或通过其他导航方式访问该路由时，系统会呈现完整的注册表单界面，包含必要的输入字段（如用户名、邮箱、密码等）及相应的验证机制，确保用户提交符合规范的注册信息，从而顺利创建新账户。
+/forgot-password：该路由为忘记密码的用户提供找回密码的入口。用户访问此路由后，会进入密码找回页面，通过输入注册邮箱等信息，触发密码重置流程，如接收重置链接邮件、设置新密码等操作，帮助用户重新获得账户访问权限 。
+TypeScript 逻辑：在登录组件的 TypeScript 逻辑中，涵盖了从表单验证到用户认证的全流程功能实现。一方面，通过严谨的表单验证逻辑，对用户输入的用户名和密码进行格式与内容校验，例如验证用户名是否符合邮箱格式规范、密码长度是否满足最低要求，确保用户提交数据的有效性；另一方面，基于 Axios 等 HTTP 客户端库，实现与后端 API 的通信交互，将用户输入的凭据以安全的方式发送至服务器进行身份验证。同时，精心处理服务器响应结果，针对认证成功与失败的不同情况，分别执行相应操作，如成功时利用 Angular 的 Router 服务将用户无缝重定向至仪表板，失败时在页面上精准展示友好的错误提示信息，保障整个登录流程的稳定性与用户体验的流畅性。
+<!-- by 龙镇法 -->
