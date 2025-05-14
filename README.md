@@ -452,7 +452,7 @@ src/app/components/homepage-intro/
 ## Importing the Component
 To use this component in your Angular application, ensure the module is properly imported in your feature module or AppModule:
 ```
-Import {HomePageIntroComponent}. /Component/homepage introduction/homepage introduction. Components';
+import { HomePageIntroComponent } from '../components/homepage-intro/home-page-intro.component';
 ```
 
 ## Adding Component to Template
@@ -473,12 +473,11 @@ Modify files to update introductory text or add new visual elements. For example
 
 ## Styling
 You can update the stylesheet to comply with the application's design system. Example:
-
 ```
-Introduction section{
-Text alignment: centered;
-Fill: 20px;
-Background color: # f9f9f9;
+.introduction-section {
+text-align: center;
+padding: 20px;
+background-color: #f9f9f9;
 }
 ```
  

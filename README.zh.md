@@ -39,9 +39,9 @@ import { HomePageIntroComponent } from './components/homepage-intro/homepage-int
 可根据应用设计系统更新样式表，示例：  
 ```css
 .intro-section {
-  text-align: center;
-  padding: 20px;
-  background-color: #f9f9f9;
+  文本对齐: 居中;
+  内边距: 20px;
+  背景色: #f9f9f9;
 }
 ```
 
